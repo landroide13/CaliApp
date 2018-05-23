@@ -1,0 +1,38 @@
+
+<%= form_for :Rutine do |f| %>
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">
+      <%= f.label :Exercise %>
+    </label>
+    <div class="col-sm-4">
+      <%= f.text_field :Exercise, type:"text", class:"form-control", placeholder:"Exercise Name", autofocus: true %>
+    </div>
+  </div> 
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">
+      <%= f.label :Sets %>
+    </label>
+    <div class="col-sm-4">
+      <%= f.text_field :Sets, type:"number", class:"form-control", placeholder:"Sets" %>
+    </div>
+  </div> 
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">
+      <%= f.label :Reps %>
+    </label>
+    <div class="col-sm-4">
+      <%= f.text_field :Reps, type:"number", class:"form-control", placeholder:"Reps" %>
+    </div>
+  </div> 
+
+  <div class="form-group">
+    <div class="col-sm-10">
+      <%= f.submit 'Save', class:"btn btn-sm btn-success" %>
+    </div>
+  </div>   
+
+
+<% end %>

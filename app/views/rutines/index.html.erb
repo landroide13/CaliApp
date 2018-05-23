@@ -1,0 +1,20 @@
+
+
+<h1>Listing Rutines</h1>
+ 
+<table>
+  <tr>
+    <th>Exercise</th>
+    <th>Sets</th>
+    <th>Reps</th>
+  </tr>
+ 
+  <% @rutines.each do |r| %>
+    <tr>
+      <td><%= r.exercise %></td>
+      <td><%= r.sets %></td>
+      <td><%= r.reps %></td>
+      <td><%= link_to 'Show', rutine_path(r) %></td>
+    </tr>
+  <% end %>
+</table>

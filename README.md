@@ -5,20 +5,13 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Add Rutines
 
-* System dependencies
+* Create, Edit and destroy you rutines.
 
-* Configuration
+* Track your progress.
 
-* Database creation
+* Plan your training.
 
-* Database initialization
+* Chat with others.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

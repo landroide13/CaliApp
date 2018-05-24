@@ -7,6 +7,7 @@
     <th>Exercise</th>
     <th>Sets</th>
     <th>Reps</th>
+    <th>Action</th>
   </tr>
  
   <% @rutines.each do |r| %>
@@ -14,7 +15,9 @@
       <td><%= r.exercise %></td>
       <td><%= r.sets %></td>
       <td><%= r.reps %></td>
-      <td><%= link_to 'Show', rutine_path(r) %></td>
+      <td><%= link_to 'Show', rutine_path(r) %> /
+        <%= link_to 'Edit', edit_rutine_path(r) %> /
+        <%= link_to 'Deleted', rutine_path(r), method: :delete, data: {confirm: "Are you sure ? "} %></td>
     </tr>
   <% end %>
 </table>

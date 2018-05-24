@@ -1,30 +1,32 @@
 
-<%= form_for :Rutine do |f| %>
+<%= render 'share/errors', obj: @rutine %>
+
+<%= form_for @rutine do |f| %>
 
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">
-      <%= f.label :Exercise %>
+      <%= f.label :exercise %>
     </label>
     <div class="col-sm-4">
-      <%= f.text_field :Exercise, type:"text", class:"form-control", placeholder:"Exercise Name", autofocus: true %>
+      <%= f.text_field :exercise, type:"text", class:"form-control", placeholder:"Exercise Name", autofocus: true %>
     </div>
   </div> 
 
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">
-      <%= f.label :Sets %>
+      <%= f.label :sets %>
     </label>
     <div class="col-sm-4">
-      <%= f.text_field :Sets, type:"number", class:"form-control", placeholder:"Sets" %>
+      <%= f.text_field :sets, type:"number", class:"form-control", placeholder:"Sets" %>
     </div>
   </div> 
 
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">
-      <%= f.label :Reps %>
+      <%= f.label :reps %>
     </label>
     <div class="col-sm-4">
-      <%= f.text_field :Reps, type:"number", class:"form-control", placeholder:"Reps" %>
+      <%= f.text_field :reps, type:"number", class:"form-control", placeholder:"Reps" %>
     </div>
   </div> 
 
